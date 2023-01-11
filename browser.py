@@ -48,7 +48,7 @@ class FormClient:
         # Снимаем скриншот
         time.sleep(2)
         self.take_screenshot_and_send(driver, user['chat_id'])
-        driver.close()
+        driver.quit()
 
     def fill_name(self, driver, user):
         '''
